@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlantasClient.Paginas.EnfermedadesPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="Enfermedades"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}">
+    <ListView
+        ItemsSource="{Binding Enfermedades}"
+        HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="1">
+
+                            <Label Text="{Binding Nombre}" TextColor="Blue" FontSize="20"/>
+
+                        </StackLayout>
+
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="ic_shortcut_add_circle_outline" Command="{Binding GoToCommand}" CommandParameter="EnfermedadNew"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+</ContentPage>
