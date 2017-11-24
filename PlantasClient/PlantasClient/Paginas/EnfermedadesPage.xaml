@@ -18,7 +18,7 @@
                         </Grid.ColumnDefinitions>
                         <StackLayout Grid.Column="1">
 
-                            <Label Text="{Binding Nombre}" TextColor="Blue" FontSize="20"/>
+                            <Label Text="{Binding Nombre}" TextColor="Green"  FontSize="20"/>
 
                         </StackLayout>
 
@@ -28,6 +28,6 @@
         </ListView.ItemTemplate>
     </ListView>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="ic_shortcut_add_circle_outline" Command="{Binding GoToCommand}" CommandParameter="EnfermedadNew"></ToolbarItem>
+        <ToolbarItem Icon="ic_shortcut_add_circle_outline" Command="{Binding GoToCommand}" CommandParameter="EnfermedadNewPage"></ToolbarItem>
     </ContentPage.ToolbarItems>
 </ContentPage>

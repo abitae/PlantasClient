@@ -39,18 +39,28 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Claces\Enfermedades.cs" />
+    <Compile Include="Claces\Menu.cs" />
     <Compile Include="Infrastructure\InstanceLocator.cs" />
+    <Compile Include="Paginas\ConsultasPage.xaml.cs">
+      <DependentUpon>ConsultasPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\EnfermedadesPage.xaml.cs">
       <DependentUpon>EnfermedadesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Paginas\EnfermedadNewPage.xaml.cs">
       <DependentUpon>EnfermedadNewPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\HierbasPage.xaml.cs">
+      <DependentUpon>HierbasPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\MasterPage.xaml.cs">
       <DependentUpon>MasterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Paginas\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\UbicacionPage.xaml.cs">
+      <DependentUpon>UbicacionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\EnfermedadesViewModel.cs" />
@@ -120,6 +130,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Paginas\EnfermedadNewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Paginas\HierbasPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Paginas\ConsultasPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Paginas\UbicacionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

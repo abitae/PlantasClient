@@ -10,17 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace PlantasClient.Paginas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterPage : MasterDetailPage
+    public partial class UbicacionPage : ContentPage
     {
-        public MasterPage()
+        public UbicacionPage()
         {
             InitializeComponent();
-        }
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            App.Master = this;
-            App.Navigator = this.Navigator;
         }
     }
 }

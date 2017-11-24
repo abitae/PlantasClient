@@ -1,12 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PlantasClient.Paginas.EnfermedadNewPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="PlantasClient.Paginas.EnfermedadNewPage"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             Title="New Enfermedad"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}">
+    <ScrollView>
+        <StackLayout Padding="8">
+            <Label TextColor="{StaticResource FontColor}"
+                   Text="Nombre"></Label>
+            <Entry TextColor="Green" BackgroundColor="White" Placeholder="Nombre Planta"></Entry>
+            <Label TextColor="{StaticResource FontColor}"
+                   Text="Descripcion"></Label>
+            <Entry TextColor="Green" BackgroundColor="White" Placeholder="Descripcion"></Entry>
+            <Button
+                HeightRequest="50"
+                BorderRadius="25"
+                BackgroundColor="{StaticResource MainColor}"
+                TextColor="{StaticResource MenuFontColor}"
+                Text="Guardar"></Button>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>
